@@ -30,20 +30,14 @@ PORT = os.environ.get("PORT", "8080")
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://jnanesh:jnanesh@cluster0.8pzxa6s.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "filestorenk")
-
+"
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001219225979"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "𝑯𝒆𝒚 {first} 𝑰 𝒂𝒎 𝒇𝒊𝒍𝒆 𝒔𝒕𝒐𝒓𝒆 𝒃𝒐𝒕 𝒏𝒐𝒕 𝒂𝒏𝒐𝒕𝒉𝒆𝒓 𝒃𝒐𝒕 𝑰 𝒄𝒂𝒏 𝒔𝒕𝒐𝒓𝒆 𝒖𝒓 𝒇𝒊𝒍𝒆 𝑰𝒏 𝒎𝒚 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒂𝒏𝒅 𝑰 𝒘𝒊𝒍𝒍 𝒈𝒊𝒗𝒆 𝒚𝒐𝒖 𝒔𝒉𝒂𝒓𝒆𝒂𝒃𝒍𝒆 𝒍𝒊𝒏𝒌 𝒖 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌 𝒕𝒐 𝒈𝒆𝒕 𝒖𝒓 𝒇𝒊𝒍𝒆𝒔 𝒂𝒏𝒚 𝒕𝒊𝒎𝒆 𝒖  𝒂𝒍𝒔𝒐 𝒔𝒉𝒂𝒓𝒕 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌
-
-𝑰 𝒐𝒏𝒍𝒚 𝒘𝒐𝒓𝒌 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒑𝒆𝒓𝒔𝒐𝒏 @Beastonejnanesh 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝒉𝒆 𝒊𝒔 𝒎𝒚 𝒄𝒓𝒆𝒂𝒕𝒐𝒓 
-
-𝑼 𝒘𝒂𝒏𝒕 𝒕𝒉𝒊𝒔 𝒕𝒚𝒑𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏 𝒅𝒎 @Beastonejnanesh 
-
-𝑱𝒐𝒊𝒏 𝒎𝒚 𝒈𝒓𝒐𝒖𝒑 @ROCKERSBACKUP")
+START_MSG = os.environ.get("START_MESSAGE", "𝑯𝒆𝒚 {first} 𝑰 𝒂𝒎 𝒇𝒊𝒍𝒆 𝒔𝒕𝒐𝒓𝒆 𝒃𝒐𝒕 𝒏𝒐𝒕 𝒂𝒏𝒐𝒕𝒉𝒆𝒓 𝒃𝒐𝒕 𝑰 𝒄𝒂𝒏 𝒔𝒕𝒐𝒓𝒆 𝒖𝒓 𝒇𝒊𝒍𝒆 𝒂𝒏𝒅 𝑰 𝒘𝒊𝒍𝒍 𝒈𝒊𝒗𝒆 𝒚𝒐𝒖 𝒔𝒉𝒂𝒓𝒆𝒂𝒃𝒍𝒆 𝒍𝒊𝒏𝒌 𝒖 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌 𝒕𝒐 𝒈𝒆𝒕 𝒖𝒓 𝒇𝒊𝒍𝒆𝒔 𝒂𝒏𝒚 𝒕𝒊𝒎𝒆 𝒖 𝒂𝒍𝒔𝒐 𝒔𝒉𝒂𝒓𝒕 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1384893863").split()):
