@@ -29,7 +29,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://jnanesh:jnanesh@cluster0.8pzxa6s.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_NAME = os.environ.get("DATABASE_NAME", "filestorenk")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001219225979"))
@@ -37,10 +37,16 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001219225979"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "𝑯𝒆𝒚 {first} 𝑰 𝒂𝒎 𝒇𝒊𝒍𝒆 𝒔𝒕𝒐𝒓𝒆 𝒃𝒐𝒕 𝒏𝒐𝒕 𝒂𝒏𝒐𝒕𝒉𝒆𝒓 𝒃𝒐𝒕 𝑰 𝒄𝒂𝒏 𝒔𝒕𝒐𝒓𝒆 𝒖𝒓 𝒇𝒊𝒍𝒆 𝑰𝒏 𝒎𝒚 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒂𝒏𝒅 𝑰 𝒘𝒊𝒍𝒍 𝒈𝒊𝒗𝒆 𝒚𝒐𝒖 𝒔𝒉𝒂𝒓𝒆𝒂𝒃𝒍𝒆 𝒍𝒊𝒏𝒌 𝒖 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌 𝒕𝒐 𝒈𝒆𝒕 𝒖𝒓 𝒇𝒊𝒍𝒆𝒔 𝒂𝒏𝒚 𝒕𝒊𝒎𝒆 𝒖  𝒂𝒍𝒔𝒐 𝒔𝒉𝒂𝒓𝒕 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒌
+
+𝑰 𝒐𝒏𝒍𝒚 𝒘𝒐𝒓𝒌 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒑𝒆𝒓𝒔𝒐𝒏 @Beastonejnanesh 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝒉𝒆 𝒊𝒔 𝒎𝒚 𝒄𝒓𝒆𝒂𝒕𝒐𝒓 
+
+𝑼 𝒘𝒂𝒏𝒕 𝒕𝒉𝒊𝒔 𝒕𝒚𝒑𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏 𝒅𝒎 @Beastonejnanesh 
+
+𝑱𝒐𝒊𝒏 𝒎𝒚 𝒈𝒓𝒐𝒖𝒑 @ROCKERSBACKUP")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "1384893863").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -49,7 +55,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "https://t.me/ROCKERSBACKUP")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
