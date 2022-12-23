@@ -88,8 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩", f'link = "https://t.me/ROCKERSBACKUP"),
+                    InlineKeyboardButton("𝐌𝐗𝐏𝐋𝐀𝐘𝐄𝐑 𝐦𝐨𝐯𝐢𝐞  📡", f'link = "https://t.me/+tU8INwk_RbRlYWM1")
                 ]
             ]
         )
@@ -132,7 +132,7 @@ async def not_joined(client: Client, message: Message):
             [
                 InlineKeyboardButton(
                     text = 'Try Again',
-                    url = f"https://t.me/{client.username}?start={message.command[1]}"
+                    url = f"https://telegram.me/{client.username}?start={message.command[1]}"
                 )
             ]
         )
