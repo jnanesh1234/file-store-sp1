@@ -88,8 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩", f'link = "https://t.me/ROCKERSBACKUP"),
-                    InlineKeyboardButton("𝐌𝐗𝐏𝐋𝐀𝐘𝐄𝐑 𝐦𝐨𝐯𝐢𝐞  📡", f'link = "https://t.me/+tU8INwk_RbRlYWM1")
+                    InlineKeyboardButton("𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩", url = f"https://t.me/ROCKERSBACKUP"),
+                    InlineKeyboardButton("𝐌𝐗𝐏𝐋𝐀𝐘𝐄𝐑 𝐦𝐨𝐯𝐢𝐞  📡", url = f"https://t.me/+tU8INwk_RbRlYWM1")
                 ]
             ]
         )
